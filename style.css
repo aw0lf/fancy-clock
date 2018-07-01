@@ -1,0 +1,71 @@
+html{
+    background-color: white;
+    background-size: cover;
+    font-family: 'helevetica neue';
+    text-align: center;
+    font-size: 10px;
+}
+body{
+    margin: 0;
+    font-size: 2rem;
+    display:flex;
+    flex:1;
+    min-height: 100vh;
+    align-items: center;
+}    
+.app-cont{
+    background-image: url(https://cdn.pixabay.com/photo/2015/07/10/13/47/station-839208_960_720.jpg);
+    margin:50px auto;
+    position: relative;
+    min-width: 125vh;
+    opacity: 0.9;
+    box-shadow: 10px 10px 5px grey;
+
+}
+.clock {
+    width:30rem;
+    height: 30rem;
+    border:10px solid #009999;
+    border-radius:50%;
+    margin:50px auto;
+    position: relative;
+    padding:2rem;
+    box-shadow:
+      0 0 0 4px rgba(0,0,0,0.1),
+      inset 0 0 0 2px rgb(64, 202, 202),
+      inset 0 0 5px black,
+      0 0 10px rgba(0,0,0,0.2);
+      
+  }
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(3px); 
+  }
+  .hand {
+    width: 46%;
+    height:6px;
+    background:#009999;
+    position: absolute;
+    top:50%;
+    box-shadow: 0.5px 0.5px 1px 0px grey;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function:cubic-bezier(0.1, 2.7, 0.58,1);
+  }
+  .signature {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: grey;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  
+  .signature a {
+    text-decoration: none;
+    color: #009999;
+  }
